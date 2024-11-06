@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ŠimonŠnyta\\Documents\\GitHub\\OOP\\factory\\factory.csproj",
+      "projectUniqueName": "C:\\Users\\ŠimonŠnyta\\Documents\\GitHub\\FM-SNYTA\\factory_method\\factory\\factory.csproj",
       "projectName": "factory",
-      "projectPath": "C:\\Users\\ŠimonŠnyta\\Documents\\GitHub\\OOP\\factory\\factory.csproj",
+      "projectPath": "C:\\Users\\ŠimonŠnyta\\Documents\\GitHub\\FM-SNYTA\\factory_method\\factory\\factory.csproj",
       "packagesPath": "C:\\Users\\ŠimonŠnyta\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ŠimonŠnyta\\Documents\\GitHub\\OOP\\factory\\obj\\",
+      "outputPath": "C:\\Users\\ŠimonŠnyta\\Documents\\GitHub\\FM-SNYTA\\factory_method\\factory\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ŠimonŠnyta\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -4,7 +4,7 @@ namespace factory
 {
     abstract class Creator
     {
-        public abstract Animal FactoryMethod(); // Tahhle metoda na bude vyprdávat instance pro třídu Animal
+        public abstract Animal FactoryMethod(); // Tahhle metoda na bude vyprdávat instance pro třídu Animal. Více na řádku 12
     }
     class Animal : Creator{
         public override Animal FactoryMethod()
@@ -15,7 +15,7 @@ namespace factory
         public string type;
         public int age;
         public string noise;
-        public Animal(string race, string type, int age, string noise)
+        public Animal(string race, string type, int age, string noise) // Konstruktor
         {
             this.race = race;
             this.type = type;
@@ -23,7 +23,7 @@ namespace factory
             this.noise =  noise;
         }
         public string MakeSomeNoise (){
-           return "${this.noise}";
+           return $"{this.noise}";
         }
     }
 }
