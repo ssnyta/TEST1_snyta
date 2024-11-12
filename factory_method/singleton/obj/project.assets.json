@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ŠimonŠnyta\\Documents\\OOP\\FM-SNYTA\\factory_method\\factory\\factory.csproj",
-      "projectName": "factory",
-      "projectPath": "C:\\Users\\ŠimonŠnyta\\Documents\\OOP\\FM-SNYTA\\factory_method\\factory\\factory.csproj",
+      "projectUniqueName": "C:\\Users\\ŠimonŠnyta\\Documents\\OOP\\FM-SNYTA\\factory_method\\singleton\\singleton.csproj",
+      "projectName": "singleton",
+      "projectPath": "C:\\Users\\ŠimonŠnyta\\Documents\\OOP\\FM-SNYTA\\factory_method\\singleton\\singleton.csproj",
       "packagesPath": "C:\\Users\\ŠimonŠnyta\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ŠimonŠnyta\\Documents\\OOP\\FM-SNYTA\\factory_method\\factory\\obj\\",
+      "outputPath": "C:\\Users\\ŠimonŠnyta\\Documents\\OOP\\FM-SNYTA\\factory_method\\singleton\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
