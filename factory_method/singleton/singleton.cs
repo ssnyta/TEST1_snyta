@@ -2,11 +2,31 @@ using System.ComponentModel;
 
 namespace Singleton
 {
-    public sealed class Singleton{
-        private static string name;
-        private Singleton(){}
-        public static Singleton VratInstanci(){
-           try{return instance ;}catch{}
+    class Singleton
+    {
+        private Singleton() { }
+
+        private static Singleton _instance;
+        private static readonly object _padlock = new object();
+
+        public int value {get; set;}
+
+        public static Singleton VratInstanci()
+        {
+            lock (_padlock)
+            {
+                if (_instance == null)
+                {
+                    _instance = new Singleton();
+                }
+                return _instance;
+            }
         }
+
+        public string PredstavSe(){
+            return $"Wussup {value}";
+        }
+
     }
 }
+

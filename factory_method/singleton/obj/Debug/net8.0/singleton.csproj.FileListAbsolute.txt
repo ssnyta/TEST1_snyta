@@ -1,0 +1,15 @@
+C:\Users\ŠimonŠnyta\Documents\OOP\FM-SNYTA\factory_method\singleton\bin\Debug\net8.0\singleton.exe
+C:\Users\ŠimonŠnyta\Documents\OOP\FM-SNYTA\factory_method\singleton\bin\Debug\net8.0\singleton.deps.json
+C:\Users\ŠimonŠnyta\Documents\OOP\FM-SNYTA\factory_method\singleton\bin\Debug\net8.0\singleton.runtimeconfig.json
+C:\Users\ŠimonŠnyta\Documents\OOP\FM-SNYTA\factory_method\singleton\bin\Debug\net8.0\singleton.dll
+C:\Users\ŠimonŠnyta\Documents\OOP\FM-SNYTA\factory_method\singleton\bin\Debug\net8.0\singleton.pdb
+C:\Users\ŠimonŠnyta\Documents\OOP\FM-SNYTA\factory_method\singleton\obj\Debug\net8.0\singleton.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ŠimonŠnyta\Documents\OOP\FM-SNYTA\factory_method\singleton\obj\Debug\net8.0\singleton.AssemblyInfoInputs.cache
+C:\Users\ŠimonŠnyta\Documents\OOP\FM-SNYTA\factory_method\singleton\obj\Debug\net8.0\singleton.AssemblyInfo.cs
+C:\Users\ŠimonŠnyta\Documents\OOP\FM-SNYTA\factory_method\singleton\obj\Debug\net8.0\singleton.csproj.CoreCompileInputs.cache
+C:\Users\ŠimonŠnyta\Documents\OOP\FM-SNYTA\factory_method\singleton\obj\Debug\net8.0\singleton.sourcelink.json
+C:\Users\ŠimonŠnyta\Documents\OOP\FM-SNYTA\factory_method\singleton\obj\Debug\net8.0\singleton.dll
+C:\Users\ŠimonŠnyta\Documents\OOP\FM-SNYTA\factory_method\singleton\obj\Debug\net8.0\refint\singleton.dll
+C:\Users\ŠimonŠnyta\Documents\OOP\FM-SNYTA\factory_method\singleton\obj\Debug\net8.0\singleton.pdb
+C:\Users\ŠimonŠnyta\Documents\OOP\FM-SNYTA\factory_method\singleton\obj\Debug\net8.0\singleton.genruntimeconfig.cache
+C:\Users\ŠimonŠnyta\Documents\OOP\FM-SNYTA\factory_method\singleton\obj\Debug\net8.0\ref\singleton.dll
