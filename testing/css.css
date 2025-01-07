@@ -1,0 +1,4 @@
+body { font-family: Arial, sans-serif; }
+h1 { text-align: center; }
+form { margin: 20px auto; width: 300px; }
+label, input { display: block; margin: 10px 0; }

@@ -1,35 +1,50 @@
 const form = document.getElementById('myForm');
-        const resultParagraph = document.getElementById('result');
+const resultParagraph = document.getElementById('result');
 
-        form.addEventListener('submit', (event) => {
-            event.preventDefault();
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
 
-            const firstName = form.firstname.value;
-            const city = form.city.value;
+    const firstName = form.firstname.value.trim();
+    const city = form.city.value.trim();
 
-            // Funkce pro spočítání samohlásek a souhlásek
-            function countVowelsAndConsonants(str) {
-                const vowels = 'aeiouAEIOU';
-                let vowelCount = 0;
-                let consonantCount = 0;
+    if (!firstName || !city) {
+        resultParagraph.textContent = 'Please fill out all fields.';
+        return;
+    }
 
-                for (let i = 0; i < str.length; i++) {
-                    if (vowels.includes(str[i])) {
-                        vowelCount++;
-                    } else {
-                        consonantCount++;
-                    }
+    // Validate for special characters
+    const specialCharRegex = /[^a-zA-Z\sáéíóúýčšř]/;
+    if (specialCharRegex.test(firstName) || specialCharRegex.test(city)) {
+        resultParagraph.textContent = 'Special characters are not allowed.';
+        return;
+    }
+
+    // Validate for XSS prevention
+    const sanitizedFirstName = firstName.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    const sanitizedCity = city.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+    // Function to count vowels and consonants
+    function countVowelsAndConsonants(str) {
+        const vowels = 'aeiouAEIOUáéíóúýáä';
+        let vowelCount = 0;
+        let consonantCount = 0;
+
+        for (let char of str) {
+            if (/[a-zA-Záéíóúýčšř]/.test(char)) {
+                if (vowels.includes(char)) {
+                    vowelCount++;
+                } else {
+                    consonantCount++;
                 }
-
-                return { vowelCount, consonantCount };
             }
+        }
 
-            // Spočítáme samohlásky a souhlásky pro jméno a město
-            const firstNameCounts = countVowelsAndConsonants(firstName);
-            const cityCounts = countVowelsAndConsonants(city);
+        return { vowelCount, consonantCount };
+    }
 
-            // Sestavíme výslednou větu
-            const result = `Welcome (${firstName}) from (${city}). There are ${firstNameCounts.vowelCount} vowels in your first name and ${firstNameCounts.consonantCount} consonants in your first name and there are ${cityCounts.vowelCount} vowels in your city and ${cityCounts.consonantCount} consonants in your city.`;
+    const firstNameCounts = countVowelsAndConsonants(sanitizedFirstName);
+    const cityCounts = countVowelsAndConsonants(sanitizedCity);
 
-            resultParagraph.textContent = result;
-        });
+    const result = `Welcome (${sanitizedFirstName}) from (${sanitizedCity}). There are ${firstNameCounts.vowelCount} vowels in your first name and ${firstNameCounts.consonantCount} consonants in your first name. There are ${cityCounts.vowelCount} vowels in your city and ${cityCounts.consonantCount} consonants in your city.`;
+    resultParagraph.textContent = result;
+});
