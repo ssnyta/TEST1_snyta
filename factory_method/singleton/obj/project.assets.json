@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\ŠimonŠnyta\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\User\\Documents\\GitHub\\FM-SNYTA\\factory_method\\singleton\\singleton.csproj",
+      "projectUniqueName": "C:\\Users\\ŠimonŠnyta\\Documents\\GitHub\\FM-SNYTA\\factory_method\\singleton\\singleton.csproj",
       "projectName": "singleton",
-      "projectPath": "D:\\Users\\User\\Documents\\GitHub\\FM-SNYTA\\factory_method\\singleton\\singleton.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\User\\Documents\\GitHub\\FM-SNYTA\\factory_method\\singleton\\obj\\",
+      "projectPath": "C:\\Users\\ŠimonŠnyta\\Documents\\GitHub\\FM-SNYTA\\factory_method\\singleton\\singleton.csproj",
+      "packagesPath": "C:\\Users\\ŠimonŠnyta\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ŠimonŠnyta\\Documents\\GitHub\\FM-SNYTA\\factory_method\\singleton\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\ŠimonŠnyta\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -38,6 +38,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -59,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.111/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

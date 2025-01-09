@@ -12,25 +12,25 @@ form.addEventListener('submit', (event) => {
         return;
     }
 
-    // Validate for special characters
-    const specialCharRegex = /[^a-zA-Z\sáéíóúýčšř]/;
+    // Funkce mi kontrolu, zda jméno či město obsahuje daný character
+    const specialCharRegex = /[^a-zA-Z\sáéíóúůýčšřÁÉÍÓÚŮÝČŠŘĚěžŽŤťďĎčČ]/;
     if (specialCharRegex.test(firstName) || specialCharRegex.test(city)) {
         resultParagraph.textContent = 'Special characters are not allowed.';
         return;
     }
 
-    // Validate for XSS prevention
+    // 
     const sanitizedFirstName = firstName.replace(/</g, "&lt;").replace(/>/g, "&gt;");
     const sanitizedCity = city.replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
-    // Function to count vowels and consonants
+    // Funkce počítá souhlásky a samohlásky
     function countVowelsAndConsonants(str) {
-        const vowels = 'aeiouAEIOUáéíóúýáä';
+        const vowels = 'aeiouAEIOUáéěíóúýáäÁĚÉÍÓÚŮ';
         let vowelCount = 0;
         let consonantCount = 0;
 
         for (let char of str) {
-            if (/[a-zA-Záéíóúýčšř]/.test(char)) {
+            if (/[a-zA-ZáéíóúýčšřÁĚÉÍÓÚŮě]/.test(char)) {
                 if (vowels.includes(char)) {
                     vowelCount++;
                 } else {
