@@ -6,10 +6,12 @@ from src import calculator
     "a,b, expected",
     [
         (1,2,3),
-        (0,5,5),
-        (-2,9,7),
-        (5,-8,-3),
+        (0,5,0),
+        (-2,9,-18),
+        (5,-8,-40),
     ],
 )
-def test_add_parametrized (a,b, expected):
-    assert calculator.add_wrong(a,b) == expected
+
+    
+def test_mul_parametrized (a,b, expected):
+    assert calculator.multiply(a,b) == expected
